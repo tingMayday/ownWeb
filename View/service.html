@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="html" />
+    <meta name="description" content="html" />
+    <meta name="author" content="ting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"> 
+    <link rel="stylesheet" type="text/css" href="../Css/common.css">
+    <link rel="stylesheet" type="text/css" href="../Css/index.css">
+    <title></title>
+  </head>
+  <body class="body">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="../Images/logo-w.png"></a>
+        </div>
+        <a class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li class="active"><a href="service.html">服务项目</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <section class="section1 mb">
+      <div class="site-canvas">
+        <div class="dna">
+          <div class="dna_section" v-for="(dna,i) in sequence">
+            <div class="node top" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+            <div class="node bottom" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2 container mb">
+      <ul class="service">
+        <li>
+          <svg height="100%" width="100%">
+            <rect class="shape" x="0" y="0" rx="10" ry="10" height="100%" width="100%" />
+          </svg>
+          <div class="ico"><i class="iconfont">&#xe63f;</i></div>
+          <div class="ser-intro">
+            <p class="service-name">传统网站定制</p>
+            <p>提供定制化网站服务，根据业务需求，提供专业化的网站研发服务。</p>
+          </div>
+        </li>
+        <li>
+          <svg height="100%" width="100%">
+            <rect class="shape" x="0%" y="0" rx="10" ry="10" height="100%" width="100%" />
+          </svg>
+          <div class="ico"><i class="iconfont">&#xe600;</i></div>
+          <div class="ser-intro">
+            <p class="service-name">响应式网站开发</p>
+            <p>运用Html5技术，手机端浏览兼容更好，您解决多平台显示问题</p>
+          </div>
+        </li>
+        <li>
+          <svg height="100%" width="100%">
+            <rect class="shape" x="0" y="0" rx="10" ry="10" height="100%" width="100%" />
+          </svg>
+          <div class="ico"><i class="iconfont">&#xe604;</i></div>
+          <div class="ser-intro">
+            <p class="service-name">高品质仿站</p>
+            <p>根据业务需求，将网站功能精确复制，提供专业化的网站服务。</p>
+          </div>
+        </li>
+        <li>
+          <svg height="100%" width="100%">
+            <rect class="shape" x="0" y="0" rx="10" ry="10" height="100%" width="100%" />
+          </svg>
+          <div class="ico"><i class="iconfont">&#xe841;</i></div>
+          <div class="ser-intro">
+            <p class="service-name">微信小程序制作</p>
+            <p>专注微信小程序开发，提供微信商城个性化服务。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="section3 container mb">
+      <div class="title">服务<span>领域</span></div>
+      <p>小黑屋工作室全心致力于企事业单位网站设计开发、购物商城建设、手机网站建设、APP开发、微信小程序制作、微信网站制作、网络营销推广；我们服务于全行业， 助力国内企业电商成长，为企业创造新的渠道销售机会。</p>
+      <div class="img-inner"><img src="../Images/service.jpg"></div>
+    </section>
+    <section class="section4 container mb">
+       <div class="title"><span>服务</span>流程</div>
+       <ul class="process">
+         <li>
+           <i class="iconfont">&#xe661;</i>
+           <p class="pro-title">客户需求</p>
+           <p>一对一深入了解客户需求</p>
+         </li>
+         <li>
+           <i class="iconfont">&#xe60d;</i>
+           <p class="pro-title">定制方案</p>
+           <p>根据需求制定详细方案</p>
+         </li>
+         <li>
+           <i class="iconfont">&#xe626;</i>
+           <p class="pro-title">开始定制开发</p>
+           <p>根据需求开始制作开发</p>
+         </li>
+         <li>
+           <i class="iconfont">&#xe690;</i>
+           <p class="pro-title">客户验收</p>
+           <p>客户验收/后期修改完善</p>
+         </li>
+         <li>
+           <i class="iconfont">&#xe6b1;</i>
+           <p class="pro-title">完成</p>
+           <p>客户验收完成</p>
+         </li>
+       </ul>
+    </section>
+    <!-- 案例展示，暂无，隐藏 -->
+    <!--  <section class="section5 mb">
+      <div class="container title"><span>理念与技术</span>的完美结合</div>
+      <div class="inner">
+        <a href="../Images/case1.jpg" class="w50" data-lb-group="1">
+          <img src="../Images/case1.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+        <a href="../Images/case2.jpg" class="w25" data-lb-group="1">
+          <img src="../Images/case2.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+        <a href="../Images/case3.jpg" class="w25" data-lb-group="1">
+          <img src="../Images/case3.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+      </div>
+      <div class="inner">
+        <a href="../Images/case4.jpg" class="w25" data-lb-group="1">
+          <img src="../Images/case4.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+        <a href="../Images/case5.jpg" class="w25" data-lb-group="1">
+          <img src="../Images/case5.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+        <a href="../Images/case6.jpg" class="w50" data-lb-group="1">
+          <img src="../Images/case6.jpg" class="img-responsive" alt="w3ls">
+          <div class="p-mask">
+            <h4><span>Heading here</span></h4>
+            <p>Neque porro quisquam est.</p>
+          </div>
+        </a>
+      </div>
+    </section> -->
+    <footer>
+      <div class="copyright tac"><span>© Copyright 2015 Revelance. All rights reserved.</span></div>
+    </footer>
+    <script src="../Js/jquery.min.js"></script>
+    <script src="../JS/vue-js/vue.min.js"></script>
+    <script src="../JS/common.js"></script>
+  </body>
+</html>

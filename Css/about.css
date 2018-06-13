@@ -1,0 +1,184 @@
+section.section1 {
+  max-height: 800px;
+  background: #000; }
+  section.section1 .site-canvas {
+    position: relative;
+    padding-top: 80px;
+    opacity: .5; }
+    section.section1 .site-canvas .dna {
+      text-align: center;
+      overflow: hidden; }
+      section.section1 .site-canvas .dna .dna_section {
+        position: relative;
+        margin: 0 .3em;
+        width: 50px;
+        height: 250px;
+        display: inline-block; }
+        section.section1 .site-canvas .dna .dna_section .node {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: 35px;
+          border-radius: 100%;
+          background: #fff;
+          animation: 4s topNode ease-in-out infinite; }
+          section.section1 .site-canvas .dna .dna_section .node.bottom {
+            top: auto;
+            bottom: 0;
+            background: #00b7f1;
+            animation: 4s bottomNode ease-in-out infinite; }
+@-webkit-keyframes topNode {
+  0% {
+    transform: scale(0.5);
+    top: 0;
+    z-index: 10;
+    opacity: 0.75; }
+  25% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(0.5);
+    top: 200px;
+    z-index: 0;
+    opacity: 0.75; }
+  75% {
+    transform: scale(0.25);
+    opacity: 0.5; }
+  100% {
+    transform: scale(0.5);
+    top: 0;
+    opacity: 0.75; } }
+@keyframes topNode {
+  0% {
+    transform: scale(0.5);
+    top: 0;
+    z-index: 10;
+    opacity: 0.75; }
+  25% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(0.5);
+    top: 200px;
+    z-index: 0;
+    opacity: 0.75; }
+  75% {
+    transform: scale(0.25);
+    opacity: 0.5; }
+  100% {
+    transform: scale(0.5);
+    top: 0;
+    opacity: 0.75; } }
+@-webkit-keyframes bottomNode {
+  0% {
+    transform: scale(0.5);
+    bottom: 0;
+    opacity: 0.75; }
+  25% {
+    transform: scale(0.25);
+    opacity: 0.5; }
+  50% {
+    transform: scale(0.5);
+    bottom: 200px;
+    opacity: 0.75; }
+  75% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0.5);
+    bottom: 0;
+    opacity: 0.75; } }
+@keyframes bottomNode {
+  0% {
+    transform: scale(0.5);
+    bottom: 0;
+    opacity: 0.75; }
+  25% {
+    transform: scale(0.25);
+    opacity: 0.5; }
+  50% {
+    transform: scale(0.5);
+    bottom: 200px;
+    opacity: 0.75; }
+  75% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0.5);
+    bottom: 0;
+    opacity: 0.75; } }
+  section.section1 .poster-info {
+    padding: 3em;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    box-sizing: border-box; }
+    section.section1 .poster-info h3 {
+      line-height: 0;
+      font-size: 3em;
+      font-weight: lighter;
+      text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.57); }
+section.section2 {
+  line-height: 2em; }
+section.section3 .about {
+  display: flex; }
+  section.section3 .about .info {
+    width: 25%;
+    padding: 15em 3em 3em 3em;
+    background: #ededef; }
+    section.section3 .about .info h4 {
+      color: #222; }
+    section.section3 .about .info p {
+      color: #888;
+      font-size: 14px; }
+section.section4 {
+  padding: 100px 0;
+  color: #fff; }
+  section.section4 .con {
+    display: flex;
+    flex-wrap: wrap; }
+    section.section4 .con .img-inner, section.section4 .con .info {
+      width: 50%;
+      padding: 1em;
+      box-sizing: border-box; }
+    section.section4 .con .info ul {
+      padding: 2em;
+      line-height: 2em;
+      list-style: circle;
+      color: #989898; }
+    section.section4 .con .info .inner-info {
+      display: flex;
+      margin-top: 3em; }
+      section.section4 .con .info .inner-info .inner-sec {
+        flex: 1;
+        padding: 1em; }
+        section.section4 .con .info .inner-info .inner-sec .iconfont {
+          color: #00b7f1;
+          font-size: 2.5em; }
+        section.section4 .con .info .inner-info .inner-sec h5 {
+          font-size: 1em; }
+        section.section4 .con .info .inner-info .inner-sec p {
+          font-size: 0.8em;
+          line-height: 2em;
+          margin-top: 1em;
+          color: #989898;
+          letter-spacing: 1px; }
+    section.section4 .con .info .tip {
+      color: #666; }
+
+@media screen and (max-width: 767px) {
+  section.section2 p {
+    padding: .5em; }
+  section.section3 .about {
+    flex-wrap: wrap; }
+    section.section3 .about .info {
+      width: 100%;
+      padding: 2em; }
+    section.section3 .about .img-inner:last-child {
+      display: none; }
+  section.section4 .con .img-inner, section.section4 .con .info {
+    padding: 0;
+    width: 100%; } }
+
+/*# sourceMappingURL=about.css.map */

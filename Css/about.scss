@@ -1,0 +1,175 @@
+section{
+  &.section1{
+    max-height: 800px;
+    background: #000;
+    .site-canvas {
+      position:relative;
+      padding-top: 80px;
+      opacity: .5;
+      .dna {
+        text-align:center;
+        overflow:hidden;
+        .dna_section {
+          position:relative;
+          margin:0 .3em;
+          width:50px;
+          height:250px;
+          display:inline-block;
+          .node {
+            position:absolute;
+            top:0;
+            left:0;
+            width:35px;
+            height:35px;
+            border-radius:100%;
+            background:#fff;
+            animation:4s topNode ease-in-out infinite;
+            &.bottom {
+              top:auto;
+              bottom:0;
+              background:#00b7f1;
+              animation:4s bottomNode ease-in-out infinite;
+            }
+          }
+        }
+      }
+    }
+    @-webkit-keyframes topNode {
+      0% {transform:scale(0.5);top:0;z-index:10;opacity:0.75;}
+      25% {transform:scale(1);opacity:1;}
+      50% {transform:scale(0.5);top:200px;z-index:0;opacity:0.75;}
+      75% {transform:scale(0.25);opacity:0.5;}
+      100% {transform:scale(0.5);top:0;opacity:0.75;}
+    }
+    @keyframes topNode {
+      0% {transform:scale(0.5);top:0;z-index:10;opacity:0.75;}
+      25% {transform:scale(1);opacity:1;}
+      50% {transform:scale(0.5);top:200px;z-index:0;opacity:0.75;}
+      75% {transform:scale(0.25);opacity:0.5;}
+      100% {transform:scale(0.5);top:0;opacity:0.75;}
+    }
+    @-webkit-keyframes bottomNode {
+      0% {transform:scale(0.5);bottom:0; opacity:0.75;}
+      25% {transform:scale(0.25);opacity:0.5;}
+      50% {transform:scale(0.5);bottom:200px; opacity:0.75;}
+      75% {transform:scale(1); opacity:1;}
+      100% {transform:scale(0.5);bottom:0; opacity:0.75;}
+    }
+    @keyframes bottomNode {
+      0% {transform:scale(0.5);bottom:0; opacity:0.75;}
+      25% {transform:scale(0.25);opacity:0.5;}
+      50% {transform:scale(0.5);bottom:200px; opacity:0.75;}
+      75% {transform:scale(1); opacity:1;}
+      100% {transform:scale(0.5);bottom:0; opacity:0.75;}
+    }
+    .poster-info{
+      padding: 3em;
+      text-align: center;
+      color: #fff;
+      background: rgba(255,255,255,0.05);
+      box-sizing: border-box;
+      h3{
+        line-height: 0;
+        font-size: 3em;
+        font-weight: lighter;
+        text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.57);
+      }
+    }
+  }
+  &.section2{
+    line-height: 2em;
+  }
+  &.section3{
+    .about{
+      display: flex;
+      .info{
+        width: 25%;
+        padding: 15em 3em 3em 3em;
+        background: #ededef;
+        h4{
+          color: #222;
+        }
+        p{
+          color: #888;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &.section4{
+    padding: 100px 0;
+    color: #fff;
+    .con{
+      display: flex;
+      flex-wrap: wrap;
+      .img-inner,.info{
+        width: 50%;
+        padding: 1em;
+        box-sizing: border-box;
+      }
+      .info{
+        ul{
+          padding: 2em;
+          line-height: 2em;
+          list-style: circle;
+          color: #989898;
+        }
+        .inner-info{
+          display: flex;
+          margin-top: 3em;  
+          .inner-sec{
+            flex: 1;
+            padding: 1em;
+            .iconfont{
+              color: #00b7f1;
+              font-size: 2.5em;
+            }
+            h5{
+              font-size: 1em;
+            }
+            p{
+              font-size: 0.8em;
+              line-height: 2em;
+              margin-top: 1em;
+              color: #989898;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        .tip{
+          color: #666;
+        }
+      }
+    }
+  }
+} 
+
+@media screen and (max-width:767px) {
+  section{
+    &.section2{
+      p{
+        padding: .5em;
+      }
+    }
+    &.section3{
+      .about{
+        flex-wrap: wrap;
+        .info{
+          width: 100%;
+          padding: 2em;
+        }
+        .img-inner:last-child{
+          display: none;
+        }
+      }
+    }
+    &.section4{
+      .con{
+        .img-inner,.info{
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

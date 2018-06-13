@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="html" />
+    <meta name="description" content="html" />
+    <meta name="author" content="ting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"> 
+    <link rel="stylesheet" type="text/css" href="../Css/common.css">
+    <link rel="stylesheet" type="text/css" href="../Css/index.css">
+    <title></title>
+  </head>
+  <body class="body">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="../Images/logo-w.png"></a>
+        </div>
+        <a class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li class="active"><a href="about.html">关于我们</a></li>
+            <li><a href="service.html">服务项目</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <section class="section1 mb">
+      <div class="site-canvas">
+        <div class="dna">
+          <div class="dna_section" v-for="(dna,i) in sequence">
+            <div class="node top" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+            <div class="node bottom" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2 container mb">
+      <div class="title"><span>网站的个性</span>解决方案</div>
+      <p>佛山市企易优网络科技有限公司是一家专门从事网络托管，网店代运营，网络外包的现代型服务公司，公司坐落于中国制造业之乡佛山。公司是由一群从事电商行业多年的人员组成，致力于帮助企业更快更精准的开展互联网销售和产品宣传..</p>
+    </section>
+    <section class="section3">
+      <div class="about">
+        <div class="img-inner"><img src="../Images/about-1.jpg"></div>
+        <div class="info">
+          <h4>独特而真实的个性网站建设</h4>
+          <p>佛山市企易优网络科技有限公司是一家专门从事网络托管，网店代运营，网络外包的现代型服务公司，公司坐落于中国制造业之乡佛山。公司是由一群从事电商行业多年的人员组成，致力于帮助企业更快更精准的开展互联网销售和产品宣传..</p>
+        </div>
+        <div class="img-inner"><img src="../Images/about-2.jpg"></div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="container">
+        <div class="title">创新与<span>技术</span></div>
+        <div class="con">
+          <div class="img-inner"><img src="../Images/tech.jpg" alt=""></div>
+          <div class="info">
+            <!-- <h4>Start Something New</h4> -->
+            <ul>
+              <li>深入沟通您的需求,个性化定制 </li>
+              <li>规范开发的代码,div+css & PHP+MYSQL</li>
+              <li>开发简单操作的后台,维护操作简单 </li>
+              <li>响应式网站支持手机，平板等移动设备，三站合一</li>
+            </ul>
+            <div class="inner-info">
+              <div class="inner-sec tac">
+                <i class="iconfont">&#xe601;</i>
+                <h5>个性</h5>
+                <p>定制让网站不仅美观，更具有独一无二的个性</p>
+              </div>
+              <div class="inner-sec tac">
+                <i class="iconfont">&#xe62d;</i>
+                <h5>全平台</h5>
+                <p>一个PC端、平板端、手机端都适应的全平台网站</p>
+              </div>
+              <div class="inner-sec tac">
+                <i class="iconfont">&#xe6ae;</i>
+                <h5>易维护</h5>
+                <p>开发简单操作的后台,维护操作简单</p>
+              </div>
+            </div>
+            <p class="tip tac">你的需求决定我们的创意,更多不同等你来发现!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
+      </svg> -->
+      <div class="copyright tac"><span>© Copyright 2015 Revelance. All rights reserved.</span></div>
+    </footer>
+    <script src="../Js/jquery.min.js"></script>
+    <script src="../JS/vue-js/vue.min.js"></script>
+    <script src="../JS/common.js"></script>
+  </body>
+</html>

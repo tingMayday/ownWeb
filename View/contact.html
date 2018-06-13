@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="html" />
+    <meta name="description" content="html" />
+    <meta name="author" content="ting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"> 
+    <link rel="stylesheet" type="text/css" href="../Css/common.css">
+    <link rel="stylesheet" type="text/css" href="../Css/index.css">
+    <title></title>
+  </head>
+  <body class="body">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="../Images/logo-w.png"></a>
+        </div>
+        <a class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="service.html">服务项目</a></li>
+            <li class="active"><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <section class="section1 mb">
+      <div class="site-canvas">
+        <div class="dna">
+          <div class="dna_section" v-for="(dna,i) in sequence">
+            <div class="node top" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+            <div class="node bottom" v-bind:style="{'animation-delay' : -(i * 300) + 'ms' }"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2 container mb">
+      <div class="title">联系<span>我们</span></div>
+      <ul class="contact">
+        <li>
+          <p class="ico"><i class="iconfont">&#xe6ee;</i></p>
+          <p>打电话</p>
+          <p class="info">+86-16620849404</p>
+        </li>
+        <li>
+          <p class="ico"><i class="iconfont">&#xe602;</i></p>
+          <p>QQ在线联系</p>
+          <p class="info">3326113751</p>
+        </li>
+        <li>
+          <p class="ico"><i class="iconfont">&#xe603;</i></p>
+          <p>发邮件</p>
+          <p class="info">3326113751@qq.com</p>
+        </li>
+      </ul>
+      <div class="img-inner"><img src="../Images/contact.jpg" alt="contact"></div>
+    </section>
+    <section class="section3 container mb">
+      <div class="title">发送<span>信息</span></div>
+      <form action="#" method="post" class="contact-form">
+        <ul>
+          <li>
+            <input type="text" name="Full Name" required="">
+            <label>昵称</label>
+          </li>
+          <li>
+            <input type="text" name="Phone" required="">
+            <label>电话</label>
+          </li>
+          <li>
+            <input type="email" name="Email" required="">
+            <label>邮箱</label>
+          </li>
+          <li>
+            <textarea name="Message" rows="6" required=""></textarea>
+            <label>内容</label>
+          </li>
+          <li>
+            <input type="submit" value="发送">
+          </li>
+        </ul>
+      </form>
+    </section>
+    <footer>
+      <!-- <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
+      </svg> -->
+      <div class="copyright tac"><span>© Copyright 2015 Revelance. All rights reserved.</span></div>
+    </footer>
+    <script src="../Js/jquery.min.js"></script>
+    <script src="../JS/vue-js/vue.min.js"></script>
+    <script src="../JS/common.js"></script>
+  </body>
+</html>
